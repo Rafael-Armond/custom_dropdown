@@ -43,8 +43,9 @@ class _CustomDropdownState extends State<CustomDropdown> {
         width: width,
         top: yPosition + height + 12,
         height: 4 * height + 40,
-        child: DropDown(
-          itemHeight: height,
+        child: Container(
+          color: Colors.greenAccent,
+          height: 200,
         ),
       ),
     );
@@ -93,17 +94,17 @@ class _CustomDropdownState extends State<CustomDropdown> {
   }
 }
 
-class DropDown extends StatelessWidget {
-  final double itemHeight;
+// class DropDown extends StatelessWidget {
+//   final double itemHeight;
 
-  const DropDown({Key key, this.itemHeight}) : super(key: key);
+//   const DropDown({Key key, this.itemHeight}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(),
-      ],
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+//       children: [
+//         SizedBox(),
+//       ],
+//     );
+//   }
+// }
